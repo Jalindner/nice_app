@@ -9,8 +9,9 @@
   <link rel="stylesheet" href="/css/normalize.css">
   <!--
     application.css is where you put your styles
+    <link rel="stylesheet" href="/css/application.css">
   -->
-  <link rel="stylesheet" href="/css/application.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <!--
     Older jQuery version
@@ -19,24 +20,61 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   -->
   <script src="/js/application.js"></script>
+  <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Regy - Bootstrap Registration Landing Page</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media-queries.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
 
   <title></title>
-  <div class="nav-container">
-      <nav class="nav-bar">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/login">Login</a></li>
-          <li><a href="/users/new">Register</a></li>
 
-          <!-- CHECK IF THE USER IS LOGGED IN -->
+  <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Regy - Bootstrap Registration Landing Page</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="top-navbar-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="scroll-link" href="#features">Features</a></li>
+            <li><a class="scroll-link" href="#how-it-works">How it works</a></li>
+            <li><a class="scroll-link" href="#testimonials">Testimonials</a></li>
+            <li><a class="scroll-link" href="/login">Log In</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-          <form action="/sessions" method="POST">
-            <input name="_method" type="hidden" value="delete" />
-              <button type="submit" id="logout-button">Logout</a>
-          </form>
-        </ul>
-      </nav>
-  </div>
+    <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 899px; width: 100%; z-index: -999998; position: absolute; "><img src="img/meadow.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1920px; height: 1280px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -190.5px; "><img src="img/meadow.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1920px; height: 1280px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -190.5px; ">
+    </div>
+
 </head>
 <body>
   <%= yield %>

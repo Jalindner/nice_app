@@ -1,0 +1,98 @@
+<div class="top-content">
+  <div class="container">
+
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2 text">
+    <h1 class="wow fadeInLeftBig">Hey You, F Off, F as in....FRIEND</h1>
+    <div class="description wow fadeInLeftBig">
+      <p>
+        We have been working very hard to create the new version of our app. It comes with a lot of new features. Check it out now!
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3 r-form-1-box wow fadeInUp">
+  <% if logged_in? == false %>
+    <div class="r-form-1-top">
+      <div class="r-form-1-top-left">
+        <h3>Sign up now</h3>
+        <p>Fill in the form below to get instant access:</p>
+      </div>
+      <div class="r-form-1-top-right">
+        <i class="fa fa-pencil"></i>
+      </div>
+    </div>
+    <div class="r-form-1-bottom">
+      <form id="registration_form" role="form" action="/users" method="post">
+        <div class="form-group">
+          <label class="sr-only" for="r-form-1-first-name">Username</label>
+          <input type="text" name="username" placeholder="Username..." class="r-form-1-first-name form-control" id="r-form-1-first-name">
+
+          <label class="sr-only" for="r-form-1-email">Password</label>
+          <input type="password" name="password" placeholder="Password..."  class="r-form-1-password form-control" id="r-form-1-email">
+        </div>
+        <button type="submit" class="btn">Sign me up!</button>
+      </form>
+
+      <% else %>
+      <!-- Select victim details -->
+      <div class="fuinator">
+      <form id="furm" action="/messages" method="post">
+        <div class="form-group">
+          <label class="sr-only" for="r-form-1-first-name">Enter your victim's phone number</label>
+          <input type="text" name="phone" placeholder="Victim's Phone Number..." class="r-form-1-first-name form-control" id="r-form-1-first-name">
+          <select class="btn">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+    </div>
+
+  </div>
+</div>
+<% end %>
+    </div>
+</div>
+
+  <!-- Features -->
+  <div class="features-container section-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 features section-description wow fadeIn">
+                <h2>Why You Should Join?</h2>
+                <div class="divider-1 wow fadeInUp">. . . . . . . . . .</div>
+                <p>As our client, we are confident that our suuuuuper professional product will meet your needs.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 features-box wow fadeInUp">
+              <div class="features-box-icon"><i class="fa fa-thumbs-up"></i></div>
+                <h3>Easy To Use</h3>
+                <p>Really, there's not much to this.</p>
+              </div>
+              <div class="col-sm-4 features-box wow fadeInDown">
+              <div class="features-box-icon"><i class="fa fa-cog"></i></div>
+                <h3>Responsive Design</h3>
+                <p>For example, if you click something, it will instantly be considered clicked.</p>
+              </div>
+              <div class="col-sm-4 features-box wow fadeInUp">
+              <div class="features-box-icon"><i class="fa fa-commenting"></i></div>
+                <h3>24/7 Support</h3>
+                <p>To receive support, enter your number <a href="">here.</a></p>
+              </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 section-bottom-button wow fadeInUp">
+                  <a class="btn btn-link-1 scroll-link" href="#top-content">Sign Up Now <i class="fa fa-angle-right"></i></a>
+          </div>
+        </div>
+    </div>
+  </div>
