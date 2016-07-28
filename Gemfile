@@ -16,6 +16,7 @@ gem 'json'
 gem 'shotgun'
 gem 'bcrypt'
 gem 'rest-open-uri'
+gem 'rest-client', '~> 1.8'
 
 
 group :test do
