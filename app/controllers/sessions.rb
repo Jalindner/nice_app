@@ -22,9 +22,10 @@ post '/sessions' do
 end
 
 # # logout
-# delete '/sessions' do
-#  session[:user_id] = nil
-# end
+delete '/sessions' do
+ session[:user_id] = nil
+ redirect '/'
+end
 
 get '/' do
   erb :index

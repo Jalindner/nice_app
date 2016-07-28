@@ -1,7 +1,11 @@
 helpers do
 
   def logged_in?
-    return true if session[:user_id] != nil
+    if session[:user_id] != nil
+      return true
+    else
+      return false
+    end
   end
 
   def current_user

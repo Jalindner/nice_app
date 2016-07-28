@@ -2,6 +2,10 @@
     display: none;
 }
 
+.feat {
+    margin-top: 50px;
+}
+
 .profile-form{
     float: left;
     display: inline;
@@ -12,16 +16,26 @@
 
 }
 
+.features-container {
+    margin-top: 500px;
+}
+
 #login-form{
     max-width: 500px;
     margin: auto;
     color: #e36da1;
     margin-top: 130px;
-    background-color: rgba(30, 30, 30, 0.75);
+    background-color: rgba(20, 20, 20, 0.60);
+    border-radius: 20px;
 }
 #login-button {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#logout-button {
+    background-color: #e36da1;
+    margin-top: 8px;
 }
 
 .login-container h2 {
@@ -51,6 +65,7 @@ a, a:hover, a:focus {
 }
 
 h1, h2 {
+    padding-top: 20px;
 	margin-top: 10px;
 	font-size: 36px;
     font-weight: 700;
@@ -79,9 +94,11 @@ img { max-width: 100%; }
 /***** General style, all sections *****/
 
 .section-container {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     padding-bottom: 80px;
 }
+
+
 
 .section-container-gray-bg {
 	background: #f8f8f8;
@@ -168,7 +185,13 @@ ul.navbar-nav {
 
 /***** Top content *****/
 
-.top-content { padding: 70px 0 100px 0; }
+
+.top-content {
+    height: 800px;
+    margin-top: 80px;
+    padding: 70px 0 100px 0;
+
+}
 
 .top-content .text { color: #fff; }
 .top-content .text h1 { color: #fff; }

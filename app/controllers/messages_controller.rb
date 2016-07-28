@@ -5,15 +5,13 @@ post '/messages' do
 
   api_result = RestClient.get "http://foaas.com/off/#{name}/A%20Dear%20Friend", {:accept => :json}
   jsonResult = JSON.parse(api_result)
-  p jsonResult['message']
-  p jsonResult['subtitle']
-  p api_result
+   jsonResult['message']
+   jsonResult['subtitle']
+
   # erb :index
 
-
-
-
   redirect '/'
+
 end
 
 # get 'http://foaas.com/off/Tom/Everyone?shoutcloud'

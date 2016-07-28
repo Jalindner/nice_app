@@ -4,7 +4,8 @@ class CreateCustomMessages < ActiveRecord::Migration
       t.string :keyword
       t.string :content
       t.belongs_to :user
-      t.timestamp(null: false)
+
+      t.timestamps(null: false)
     end
   end
 end
