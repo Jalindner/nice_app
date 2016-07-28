@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <!--
+    application.css is where you put your styles
+  -->
+  <link rel="stylesheet" href="/css/application.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!--
+    Older jQuery version
+  -->
+  <!--
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  -->
+  <script src="/js/application.js"></script>
+
+  <title></title>
+  <div class="nav-container">
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/users/new">Register</a></li>
+
+          <!-- CHECK IF THE USER IS LOGGED IN -->
+
+          <form action="/sessions" method="POST">
+            <input name="_method" type="hidden" value="delete" />
+              <button type="submit" id="logout-button">Logout</a>
+          </form>
+        </ul>
+      </nav>
+  </div>
+</head>
+<body>
+  <%= yield %>
+</body>
+</html>

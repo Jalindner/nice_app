@@ -1,0 +1,114 @@
+/*Nav Bar*/
+
+.nav-container {
+  height: 30px;
+  width: 100%;
+  margin-top: 0px;
+  background-color: orange;
+}
+
+.nav-bar li {
+  display: inline;
+  position: relative;
+}
+
+.nav-bar ul {
+  padding-top:5px;
+}
+
+#logout-button {
+  display: inline;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  border:none;
+  outline:none;
+  background:none;
+  cursor:pointer;
+  color: #000000;
+  padding-right:5px;
+  text-decoration:none;
+  font-family:inherit;
+  font-size:inherit;
+}
+
+/*================================================================================================================================================*/
+
+/*User creation */
+
+.registration-container {
+  margin: auto;
+  margin-top: 50px;
+  width: 600px;
+}
+
+.registration-container input {
+  margin-left: 200px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.registration-container label {
+  margin-left: 200px;
+  width: 200px;
+}
+.registration-container h2 {
+  margin-left: 200px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.registration-container p {
+  margin-left: 200px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 12px;
+  width: 300px;
+}
+
+
+#create-account-button {
+  display: block;
+  margin: auto;
+}
+
+/*================================================================================================================================================*/
+
+
+/*User Login */
+.login-container {
+  margin: auto;
+  margin-top: 50px;
+  width: 600px;
+}
+
+.login-container input {
+  margin-left: 200px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.login-container label {
+  margin-left: 200px;
+  width: 200px;
+}
+.login-container h2 {
+  margin-left: 200px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.login-container p {
+  margin-left: 200px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 12px;
+  width: 300px;
+}
+
+#login-button {
+  display: block;
+  margin: auto;
+}
+
+/*================================================================================================================================================*/

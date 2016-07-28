@@ -1,0 +1,5 @@
+help links
+
+Partials/locals
+https://www.learnhowtoprogram.com/lessons/partials-in-sinatra#cheat-sheet
+

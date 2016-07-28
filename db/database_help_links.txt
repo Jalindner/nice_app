@@ -1,0 +1,4 @@
+help links
+
+Polymorphism
+https://launchschool.com/blog/understanding-polymorphic-associations-in-rails
