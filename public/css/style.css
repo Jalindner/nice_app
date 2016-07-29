@@ -3,7 +3,8 @@
 }
 
 .feat {
-    margin-top: 50px;
+    display: block;
+    padding-top: 125px;
 }
 
 .profile-form{
@@ -16,8 +17,8 @@
 
 }
 
-.features-container {
-    margin-top: 500px;
+.features-container  {
+    padding-top: 200px;
 }
 
 #login-form{
@@ -95,6 +96,7 @@ img { max-width: 100%; }
 
 .section-container {
     /*margin: 0 auto;*/
+    margin-top: 100px;
     padding-bottom: 80px;
 }
 
@@ -189,6 +191,7 @@ ul.navbar-nav {
 .top-content {
     height: 800px;
     margin-top: 80px;
+    margin-bottom: 100px;
     padding: 70px 0 100px 0;
 
 }

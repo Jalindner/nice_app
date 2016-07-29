@@ -5,16 +5,16 @@ end
 
 # Create new user
 post '/users' do
-  puts "reached post"
+  @errors = []
   @user = User.new(username: params[:username])
   @user.password = params[:password]
 
-  if @user.save
-    redirect '/'
-
+  if @user.valid?
+    @user.save
+    session[:user_id] = @user.id
   else
     @errors = @user.errors.full_messages
-    redirect '/users/new'
+    erb :index, locals: {errors: @errors}
   end
 
 end

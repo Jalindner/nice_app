@@ -6,13 +6,26 @@ $(document).ready(function() {
   // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
 
 
-  $("#registration_form").on('submit', function(event){
-    event.preventDefault();
-    var formContainer = $(this).parent(".r-form-1-bottom");
-    formContainer.hide();
-    var $victimInfo = formContainer.find('.fuinator').css("visbility", "visible" );
-    console.log(formContainer);
-    console.log($victimInfo);
+  // $("#registration_form").on('submit', function(event){
+  //   event.preventDefault();
+  //   var $registrationForm = $(this);
+  //   var $formContainer = $(this).parent(".r-form-1-bottom");
 
-  })
+  //   var $victimInfo = $formContainer.find('.fuinator').css("visbility", "visible" );
+  //   var data = $registrationForm.serialize();
+
+  //   $.ajax({
+  //     url: '/users',
+  //     type: 'POST',
+  //     data: data
+  //   })
+  //   .done(function(response) {
+  //     console.log("success");
+  //     $(".r-form-1-top-right").hide();
+  //     $formContainer.hide();
+
+  //   })
+
+
+  // })
 });

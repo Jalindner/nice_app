@@ -13,12 +13,13 @@ post '/sessions' do
   if @user.authenticate(password)
     session[:user_id] = @user.id
     # redirect "/"
-    p session[:user_id]
-    erb :index, layout: false, locals: {user: @user}
+    # erb :index, layout: false, locals: {user: @user}
+    redirect '/'
   else
-    @errors = []
     redirect '/users/new'
   end
+
+
 end
 
 # # logout
@@ -28,5 +29,5 @@ delete '/sessions' do
 end
 
 get '/' do
-  erb :index
+  erb :index, locals: {errors: @errors}
 end
